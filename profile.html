@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--RWD viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>UChat</title>
+  <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+  <!--js and css-->
+  <script src="./public/js/jquery.js"></script>
+  <link rel="stylesheet" href="./public/css/style.css">
+  <script src="./public/js/script.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <!--firebase-->
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+
+</head>
+<body>
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><a href="./index.html">Ocean Rebirth</a></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="./chat.html">Let's Chat</a>
+        <button id="logoutBtn" class = "mdl-navigation__link" type="button" name="button">log out</button>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Profile</span>
+    <nav class="mdl-navigation">
+      <img id="avatar" height="150px" width="150px" src="" alt=""/>
+      <h1  id = "userName" class="mdl-navigation__link"></h1>
+      Email:<p id ="email" class="mdl-navigation__link"></p>
+      Age:<p id ="age" class="mdl-navigation__link"></p>
+      Occupation:<p id ="occupation" class="mdl-navigation__link"></p>
+      Description:<p id ="description" class="mdl-navigation__link"></p>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="mdl-grid centered">
+      <div class="mdl-cell mdl-cell--12-col card">
+        <img id="avatar" height="auto" width="100%" src="" alt=""/>
+        <h1 id = "userName"></h1>
+        Email:<p id ="email"></p>
+        Age:<p id ="age"></p>
+        Occupation:<p id ="occupation"></p>
+        Description:<p id ="description"></p>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

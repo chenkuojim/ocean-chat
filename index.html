@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--RWD viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UChat</title>
+  <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+  <!--js and css-->
+  <script src="./public/js/jquery.js"></script>
+  <link rel="stylesheet" href="./public/css/style.css">
+  <script src="./public/js/script.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <!--firebase-->
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+
+</head>
+<body>
+
+
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><a href="./index.html">Ocean Rebirth</a></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="./chat.html">Chat Now!</a>
+        <button id="logoutBtn" class = "mdl-navigation__link" type="button" name="button">Log Out</button>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <div class="mdl-layout__drawer">
+    <p class="mdl-layout-title">Profile</p>
+    <nav class="mdl-navigation">
+      <img id="avatar" height="150px" width="150px" src="" alt=""/>
+      <h3  id = "User"></h3>
+      email:<p id ="Email" class="mdl-navigation__link"></p>
+      age:<p id ="Age" class="mdl-navigation__link"></p>
+      occupation:<p id ="Occupation" class="mdl-navigation__link"></p>
+      description:<p id ="Description" class="mdl-navigation__link"></p>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="mdl-grid centered">
+      <div class="mdl-cell mdl-cell--12-col card">
+         <div class="slogan">
+           <h1>Sign In</h1>
+           <p>Let's Get In Touch~</p>
+          </div>
+          <ul>
+            <li>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id ="loginEmail" />
+                <label class="mdl-textfield__label">Email...</label>
+              </div>
+            </li>
+            <li>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="password" id ="loginPassword"/>
+                <label class="mdl-textfield__label">Password...</label>
+              </div>
+            </li>
+            <li><label id ="loginLbl"></label></li>
+          </ul>
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--" type="button" id="loginBtn" name="button">Login</button>
+        <button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--" type="button" id = "signupBtn" name="button">Sign up</button>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+
+
+
+
+</footer>
+
+  <div class="fb-comments" data-href data-width="800" data-numposts="5"></div>
+
+    <footer class="clear footer">"https://chenkuojim.github.io/Ocean-Rebirth/orfire.html"  data-width="800" data-numposts="5"></div>
+
+			<div class="fb-like" data-href="https://chenkuojim.github.io/Ocean-Rebirth/orfire.html" data-width="100px" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
+			<img src="img\ig.png" class="myMOUSE">
+      <img src="img\fb.png" class="myMOUSE">
+    </footer>
+
+
+
+
+
+  <script type="text/javascript">
+		      $(document).ready(function() {
+		        $(".fancybox").fancybox();
+		      });
+		    </script>
+
+				<!-- fancybox 前導程式 start-->
+				<script>
+				//<![CDATA[
+					$(function () {
+					$("#history_img .history_img_g").each(function() {
+					var parent = $(this).parent();
+					if (parent[0].tagName == "A") {
+						parent.attr({
+						"class": "fancybox",
+						"rel": "gallery"
+					});
+					} else {
+		parent.wrap("<a class='fancybox' rel='gallery' href='" + $(this).attr("src") + "'></a>")
+		}
+		});
+		$(".fancybox").fancybox();
+		});
+		//]]>
+		</script>
+		<!-- fancybox 前導程式end, Designed By WFU BLOG -->
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=594227994101245";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+
+
+</html>
